@@ -48,6 +48,10 @@ These are the results of the two implementations:
 | TF 1.5             |     6.0e-2      |      2.9e-2    |
 | PyTorch            |     6.9e-2      |      3.1e-2    |
 
+The small discrepancies have several reasons:
+1) basis and descriptors networks are trained 400 epochs in PyTorch implementation; several thousands in TF 1.5
+2) while the two implementations are similar, there are some differences in the training process and hyperparameters due to library differences.
+3) the training requires pseudo-inverse computation; these can produce different results depending by the library
 
 ## License
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
