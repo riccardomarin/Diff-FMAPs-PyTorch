@@ -13,9 +13,9 @@ DATA_PATH = './data/FAUST_noise_0.01.mat'
 # Loading Models
 basis_model = PointNetBasis(k=20, feature_transform=False)
 desc_model = PointNetDesc(k=40, feature_transform=False)
-checkpoint = torch.load('./models/trained2/basis_model_best.pth')
+checkpoint = torch.load('./models/pretrained/basis_model_best.pth')
 basis_model.load_state_dict(checkpoint)
-checkpoint = torch.load('./models/trained2/desc_model_best.pth')
+checkpoint = torch.load('./models/pretrained/desc_model_best.pth')
 desc_model.load_state_dict(checkpoint)
 
 basis_model = basis_model.eval()
