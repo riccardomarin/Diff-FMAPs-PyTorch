@@ -49,7 +49,7 @@ These are the results of the two implementations:
 
 The small discrepancies have several reasons:
 1) basis and descriptors networks are trained 400 epochs in PyTorch implementation; several thousands in TF 1.5
-2) while the two implementations are similar, there are some differences in the training process and hyperparameters due to library differences.
+2) while the two implementations are similar, there are some differences in the training process and hyperparameters due to libraries.
 3) the training requires pseudo-inverse computation; these can produce different results depending by the library
 
 ### License
