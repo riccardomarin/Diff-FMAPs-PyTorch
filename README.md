@@ -12,10 +12,10 @@ To install requirements:
 ```setup
 pip install -r requirements.txt
 ```
-Installing pytorch may require different procedure, depending by your computer settings.
+Installing PyTorch may require an ad hoc procedure, depending on your computer settings.
 
 ### Data & Pretrained models
-You can download data and the pretrained models using the scripts:
+You can download data and the pre-trained models using the scripts:
 ```
 python .\data\download_data.py
 python .\models\pretrained\download_pretrained.py
@@ -48,9 +48,9 @@ These are the results of the two implementations:
 | PyTorch            |     6.8e-2      |      3.1e-2    |
 
 The small discrepancies have several reasons:
-1) basis and descriptors networks are trained 400 epochs in PyTorch implementation; several thousands in TF 1.5
+1) basis and descriptors networks are trained 400 epochs in PyTorch implementation; several thousand in TF 1.5
 2) while the two implementations are similar, there are some differences in the training process and hyperparameters due to libraries.
-3) the training requires pseudo-inverse computation; these can produce different results depending by the library
+3) the training requires pseudo-inverse computation; these can produce different results depending on the library
 
 ### License
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
