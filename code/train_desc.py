@@ -21,7 +21,7 @@ torch.manual_seed(manualSeed)
 
 b_size = 8
 # Out Dir
-outf = './models/trained2'
+outf = './models/trained'
 try:
     os.makedirs(outf)
 except OSError:
@@ -63,7 +63,7 @@ def desc_loss(pc_A, pc_B, phi_A, phi_B, G_A, G_B):
     c_G_Bt = torch.transpose(c_G_B,2,1)
 
     # Estimated C
-    C_my = torch.matmul(torch.pinverse(c_G_At),c_G_Bt)
+    C_my = torch.matmul(c_G_A,torch.transpose(torch.pinverse(c_G_Bt),2,1))
 
     # Optimal C
     C_opt = torch.matmul(p_inv_phi_A, phi_B)

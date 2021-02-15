@@ -1,5 +1,6 @@
 clear all;
 addpath(genpath('utils'));
+addpath(genpath('evaluation'));
 
 
 % Load Basis and descriptors

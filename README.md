@@ -45,7 +45,7 @@ These are the results of the two implementations:
 | Model name         | Ours            | Ours+Opt       |
 | ------------------ |---------------- | -------------- |
 | TF 1.5             |     6.0e-2      |      2.9e-2    |
-| PyTorch            |     6.8e-2      |      3.1e-2    |
+| PyTorch            |     5.7e-2      |      3.1e-2    |
 
 The small discrepancies have several reasons:
 1) basis and descriptors networks are trained 400 epochs in PyTorch implementation; several thousand in TF 1.5
