@@ -37,7 +37,10 @@ To evaluate the model on FAUST w\noise, run:
 ```eval
 python .\code\test_faust.py
 ```
-
+And in matlab the script:
+```eval
+.\evaluation\evaluation.m
+```
 ### Results
 
 These are the results of the two implementations:
